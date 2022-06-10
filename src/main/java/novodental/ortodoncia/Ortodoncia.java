@@ -1,7 +1,6 @@
 package novodental.ortodoncia;
 
 import java.time.Instant;
-import java.time.LocalDate;
 import java.util.List;
 
 public class Ortodoncia {
@@ -9,7 +8,7 @@ public class Ortodoncia {
 	private int id;
 	private String tipoTrabajo;
 	private Instant fechaEntrada;
-	private LocalDate fechaSalida;
+	private Instant fechaSalida;
 	private float importeOrtodoncia;
 	private List<Material> materiales;
 	
@@ -17,7 +16,7 @@ public class Ortodoncia {
 		super();
 	}
 
-	public Ortodoncia(int id, String tipoTrabajo, Instant fechaEntrada, LocalDate fechaSalida, float importeOrtodoncia,
+	public Ortodoncia(int id, String tipoTrabajo, Instant fechaEntrada, Instant fechaSalida, float importeOrtodoncia,
 			List<Material> materiales) {
 		super();
 		this.id = id;
@@ -52,11 +51,11 @@ public class Ortodoncia {
 		this.fechaEntrada = fechaEntrada;
 	}
 
-	public LocalDate getFechaSalida() {
+	public Instant getFechaSalida() {
 		return fechaSalida;
 	}
 
-	public void setFechaSalida(LocalDate fechaSalida) {
+	public void setFechaSalida(Instant fechaSalida) {
 		this.fechaSalida = fechaSalida;
 	}
 
