@@ -5,6 +5,10 @@ public class AlambreImpl extends Material implements Alambre {
 	private float diametroMilimetro;
 	private int longitudCentimetro;
 	
+	public AlambreImpl() {
+		super();
+	}
+	
 
 	public AlambreImpl(int id, float precio, float diametroMilimetro, int longitudCentimetro) {
 		super(id, precio);

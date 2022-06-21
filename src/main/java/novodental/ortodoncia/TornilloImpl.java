@@ -5,6 +5,10 @@ public class TornilloImpl extends Material implements Tornillo {
 	private String direccionApertura;
 	private int aperturaMilimetros;
 	
+	public TornilloImpl() {
+		super();
+	}
+	
 
 	public TornilloImpl(int id, float precio, String direccionApertura, int aperturaMilimetros) {
 		super(id, precio);

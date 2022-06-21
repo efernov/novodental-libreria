@@ -5,6 +5,10 @@ public abstract class Material {
 	private int id;
 	private float precio;
 	
+	public Material() {
+		
+	}
+	
 	
 	public Material(int id, float precio) {
 		super();
