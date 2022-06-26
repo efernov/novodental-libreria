@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Ortodoncia {
 	
-	private int id;
+//	private int id;
 	private String tipoTrabajo;
 	private Instant fechaEntrada;
 	private Instant fechaSalida;
@@ -16,10 +16,10 @@ public class Ortodoncia {
 		super();
 	}
 
-	public Ortodoncia(int id, String tipoTrabajo, Instant fechaEntrada, Instant fechaSalida, float importeOrtodoncia,
+	public Ortodoncia(String tipoTrabajo, Instant fechaEntrada, Instant fechaSalida, float importeOrtodoncia,
 			List<Material> materiales) {
 		super();
-		this.id = id;
+//		this.id = id;
 		this.tipoTrabajo = tipoTrabajo;
 		this.fechaEntrada = Instant.now();
 		this.fechaSalida = fechaSalida;
@@ -27,13 +27,13 @@ public class Ortodoncia {
 		this.materiales = materiales;
 	}
 
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
+//	public int getId() {
+//		return id;
+//	}
+//
+//	public void setId(int id) {
+//		this.id = id;
+//	}
 
 	public String getTipoTrabajo() {
 		return tipoTrabajo;
@@ -77,7 +77,7 @@ public class Ortodoncia {
 
 	@Override
 	public String toString() {
-		return "Ortodoncia [id=" + id + ", tipoTrabajo=" + tipoTrabajo + ", fechaEntrada=" + fechaEntrada
+		return "Ortodoncia [tipoTrabajo=" + tipoTrabajo + ", fechaEntrada=" + fechaEntrada
 				+ ", fechaSalida=" + fechaSalida + ", importeOrtodoncia=" + importeOrtodoncia + ", materiales="
 				+ materiales + "]";
 	}
