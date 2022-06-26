@@ -10,13 +10,20 @@ public class Ortodoncia {
 	private Instant fechaEntrada;
 	private Instant fechaSalida;
 	private float importeOrtodoncia;
-	private List<Material> materiales;
+	//private List<Material> materiales;
 	
 	public Ortodoncia() {
 		super();
 	}
+	
+	public Ortodoncia(String tipoTrabajo, Instant fechaEntrada, Instant fechaSalida, float importeOrtodoncia) {
+		this.tipoTrabajo = tipoTrabajo;
+		this.fechaEntrada = Instant.now();
+		this.fechaSalida = fechaSalida;
+		this.importeOrtodoncia = importeOrtodoncia;
+	}
 
-	public Ortodoncia(String tipoTrabajo, Instant fechaEntrada, Instant fechaSalida, float importeOrtodoncia,
+	/*public Ortodoncia(String tipoTrabajo, Instant fechaEntrada, Instant fechaSalida, float importeOrtodoncia,
 			List<Material> materiales) {
 		super();
 //		this.id = id;
@@ -25,7 +32,7 @@ public class Ortodoncia {
 		this.fechaSalida = fechaSalida;
 		this.importeOrtodoncia = importeOrtodoncia;
 		this.materiales = materiales;
-	}
+	}*/
 
 //	public int getId() {
 //		return id;
@@ -67,19 +74,18 @@ public class Ortodoncia {
 		this.importeOrtodoncia = importeOrtodoncia;
 	}
 
-	public List<Material> getMateriales() {
+	/*public List<Material> getMateriales() {
 		return materiales;
 	}
 
 	public void setMateriales(List<Material> materiales) {
 		this.materiales = materiales;
-	}
+	}*/
 
 	@Override
 	public String toString() {
 		return "Ortodoncia [tipoTrabajo=" + tipoTrabajo + ", fechaEntrada=" + fechaEntrada
-				+ ", fechaSalida=" + fechaSalida + ", importeOrtodoncia=" + importeOrtodoncia + ", materiales="
-				+ materiales + "]";
+				+ ", fechaSalida=" + fechaSalida + ", importeOrtodoncia=" + importeOrtodoncia + "]";
 	}
 	
 	
