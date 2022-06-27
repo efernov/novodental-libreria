@@ -10,8 +10,8 @@ public class AlambreImpl extends Material implements Alambre {
 	}
 	
 
-	public AlambreImpl(int id, float precio, float diametroMilimetro, int longitudCentimetro) {
-		super(id, precio);
+	public AlambreImpl(float precio, float diametroMilimetro, int longitudCentimetro) {
+		super(precio);
 		this.diametroMilimetro = diametroMilimetro;
 		this.longitudCentimetro = longitudCentimetro;
 	}
