@@ -18,7 +18,7 @@ public class Ortodoncia {
 	
 	public Ortodoncia(String tipoTrabajo, Instant fechaEntrada, Instant fechaSalida, float importeOrtodoncia) {
 		this.tipoTrabajo = tipoTrabajo;
-		this.fechaEntrada = Instant.now();
+		this.fechaEntrada = fechaEntrada;
 		this.fechaSalida = fechaSalida;
 		this.importeOrtodoncia = importeOrtodoncia;
 	}
