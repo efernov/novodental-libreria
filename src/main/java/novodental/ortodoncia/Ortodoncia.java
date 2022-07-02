@@ -1,47 +1,17 @@
 package novodental.ortodoncia;
 
-import java.time.Instant;
-import java.util.List;
-
 public class Ortodoncia {
 	
-//	private int id;
+
 	private String tipoTrabajo;
-	private Instant fechaEntrada;
-	private Instant fechaSalida;
+	
 	private float importeOrtodoncia;
-	//private List<Material> materiales;
-	//prueba
+	
 	public Ortodoncia() {
 		super();
 	}
 	
-	public Ortodoncia(String tipoTrabajo, Instant fechaEntrada, Instant fechaSalida, float importeOrtodoncia) {
-		this.tipoTrabajo = tipoTrabajo;
-		this.fechaEntrada = fechaEntrada;
-		this.fechaSalida = fechaSalida;
-		this.importeOrtodoncia = importeOrtodoncia;
-	}
-
-	/*public Ortodoncia(String tipoTrabajo, Instant fechaEntrada, Instant fechaSalida, float importeOrtodoncia,
-			List<Material> materiales) {
-		super();
-//		this.id = id;
-		this.tipoTrabajo = tipoTrabajo;
-		this.fechaEntrada = Instant.now();
-		this.fechaSalida = fechaSalida;
-		this.importeOrtodoncia = importeOrtodoncia;
-		this.materiales = materiales;
-	}*/
-
-//	public int getId() {
-//		return id;
-//	}
-//
-//	public void setId(int id) {
-//		this.id = id;
-//	}
-
+	
 	public String getTipoTrabajo() {
 		return tipoTrabajo;
 	}
@@ -50,21 +20,7 @@ public class Ortodoncia {
 		this.tipoTrabajo = tipoTrabajo;
 	}
 
-	public Instant getFechaEntrada() {
-		return fechaEntrada;
-	}
-
-	public void setFechaEntrada(Instant fechaEntrada) {
-		this.fechaEntrada = fechaEntrada;
-	}
-
-	public Instant getFechaSalida() {
-		return fechaSalida;
-	}
-
-	public void setFechaSalida(Instant fechaSalida) {
-		this.fechaSalida = fechaSalida;
-	}
+	
 
 	public float getImporteOrtodoncia() {
 		return importeOrtodoncia;
@@ -74,18 +30,10 @@ public class Ortodoncia {
 		this.importeOrtodoncia = importeOrtodoncia;
 	}
 
-	/*public List<Material> getMateriales() {
-		return materiales;
-	}
-
-	public void setMateriales(List<Material> materiales) {
-		this.materiales = materiales;
-	}*/
 
 	@Override
 	public String toString() {
-		return "Ortodoncia [tipoTrabajo=" + tipoTrabajo + ", fechaEntrada=" + fechaEntrada
-				+ ", fechaSalida=" + fechaSalida + ", importeOrtodoncia=" + importeOrtodoncia + "]";
+		return "Ortodoncia [tipoTrabajo=" + tipoTrabajo + ",  importeOrtodoncia=" + importeOrtodoncia + "]";
 	}
 	
 	
